@@ -1,0 +1,719 @@
+/* =====================================
+   CONFIGURACIÓN GENERAL
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #de0ca6;
+    color: #c405ef;
+}
+
+
+/* =====================================
+   ENCABEZADO
+===================================== */
+
+.header {
+    width: 100%;
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 6%;
+
+    background-color: #fffaf7;
+
+    border-bottom: 1px solid #f0d7d5;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    color: #d406ef;
+
+    letter-spacing: 5px;
+}
+
+.logo span {
+    display: block;
+
+    color: #65f506;
+
+    letter-spacing: 6px;
+
+    font-size: 13px;
+}
+
+.logo small {
+    color: #f97705;
+
+    font-size: 11px;
+}
+
+
+/* MENÚ */
+
+.menu {
+    display: flex;
+
+    gap: 35px;
+}
+
+.menu a {
+    text-decoration: none;
+
+    color: #4b3030;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c74762;
+}
+
+
+/* BOTÓN WHATSAPP */
+
+.boton-whatsapp {
+    text-decoration: none;
+
+    background-color: #d14c68;
+
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton-whatsapp:hover {
+    background-color: #b93854;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 60px 6%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff5f0 0%,
+            #fff8f4 50%,
+            #f9e9e6 100%
+        );
+}
+
+
+.hero-texto {
+    width: 50%;
+
+    padding-right: 30px;
+}
+
+
+.subtitulo {
+    color: #a84c51;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.hero h2 {
+    font-family: Georgia, serif;
+
+    font-size: 65px;
+
+    line-height: 1.05;
+
+    color: #c74762;
+
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    color: #4c3028;
+}
+
+
+.descripcion {
+    max-width: 500px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #654747;
+
+    margin-bottom: 30px;
+}
+
+
+/* BOTONES */
+
+.botones {
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+.boton-principal,
+.boton-secundario {
+    text-decoration: none;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton-principal {
+    background-color: #cf4964;
+
+    color: white;
+}
+
+.boton-principal:hover {
+    background-color: #ae354f;
+
+    transform: translateY(-3px);
+}
+
+.boton-secundario {
+    border: 1px solid #cf4964;
+
+    color: #cf4964;
+
+    background-color: transparent;
+}
+
+.boton-secundario:hover {
+    background-color: #cf4964;
+
+    color: white;
+}
+
+
+/* CARACTERÍSTICAS */
+
+.caracteristicas {
+    display: flex;
+
+    gap: 25px;
+}
+
+.caracteristicas div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.caracteristicas strong {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #d99a7c;
+
+    border-radius: 50%;
+
+    color: #c74762;
+}
+
+.caracteristicas p {
+    font-size: 11px;
+
+    line-height: 1.3;
+}
+
+
+/* IMAGEN HERO */
+
+.hero-imagen {
+    width: 50%;
+}
+
+.hero-imagen img {
+    width: 100%;
+
+    max-height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(100, 50, 50, 0.15);
+}
+
+
+/* =====================================
+   PRODUCTOS
+===================================== */
+
+.productos {
+    padding: 80px 6%;
+
+    background-color: #fffaf8;
+}
+
+
+.titulo-seccion {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.titulo-seccion p {
+    color: #c74762;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.titulo-seccion h2 {
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    color: #51332d;
+
+    margin: 8px 0;
+}
+
+.titulo-seccion span {
+    color: #c74762;
+
+    font-size: 25px;
+}
+
+
+/* GRID */
+
+.contenedor-productos {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* TARJETA */
+
+.producto {
+    background-color: #fff3ee;
+
+    border: 1px solid #efd7d2;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(100, 50, 50, 0.05);
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(100, 50, 50, 0.15);
+}
+
+
+/* IMAGEN */
+
+.imagen-producto {
+    width: 100%;
+
+    height: 250px;
+
+    overflow: hidden;
+
+    background-color: #f7e6df;
+}
+
+.imagen-producto img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.producto:hover .imagen-producto img {
+    transform: scale(1.05);
+}
+
+
+/* INFORMACIÓN */
+
+.contenido-producto {
+    padding: 20px;
+
+    text-align: center;
+}
+
+.contenido-producto h3 {
+    font-size: 18px;
+
+    color: #51332d;
+
+    margin-bottom: 10px;
+}
+
+.contenido-producto p {
+    min-height: 50px;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    color: #735858;
+
+    margin-bottom: 10px;
+}
+
+
+/* PRECIO */
+
+.precio {
+    display: block;
+
+    color: #cf4964;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+/* BOTÓN COMPRAR */
+
+.comprar {
+    display: block;
+
+    width: 100%;
+
+    text-decoration: none;
+
+    background-color: #cf4964;
+
+    color: white;
+
+    padding: 11px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.comprar:hover {
+    background-color: #a93650;
+}
+
+
+/* =====================================
+   BENEFICIOS
+===================================== */
+
+.beneficios {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding: 45px 6%;
+
+    background-color: #fbe7e3;
+}
+
+.beneficio {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.icono {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #cf4964;
+
+    color: white;
+
+    font-size: 25px;
+}
+
+.beneficio h3 {
+    color: #51332d;
+
+    margin-bottom: 5px;
+}
+
+.beneficio p {
+    color: #795b55;
+
+    font-size: 13px;
+}
+
+
+/* =====================================
+   CONTACTO
+===================================== */
+
+.contacto {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 40px;
+
+    padding: 60px 6%;
+
+    background-color: #fffaf8;
+}
+
+
+.contacto-logo h2 {
+    font-family: Georgia, serif;
+
+    color: #c74762;
+
+    font-size: 45px;
+
+    letter-spacing: 5px;
+}
+
+.contacto-logo span {
+    color: #8c4b4b;
+
+    letter-spacing: 7px;
+}
+
+.contacto-logo p {
+    margin-top: 10px;
+
+    color: #b77b66;
+}
+
+
+.contacto-info {
+    border-left: 1px solid #e6c7c1;
+
+    padding-left: 30px;
+}
+
+.contacto-info h3 {
+    color: #51332d;
+
+    margin-bottom: 15px;
+}
+
+.contacto-info a {
+    color: #cf4964;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.contacto-info p {
+    margin-top: 10px;
+
+    color: #735858;
+
+    line-height: 1.5;
+}
+
+
+.boton-contacto {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 22px;
+
+    background-color: #cf4964;
+
+    color: white !important;
+
+    border-radius: 25px;
+
+    font-size: 14px !important;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background-color: #cf4964;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .contenedor-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-texto,
+    .hero-imagen {
+        width: 100%;
+    }
+
+    .hero-texto {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 45px;
+    }
+
+    .caracteristicas {
+        flex-wrap: wrap;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-info {
+        border-left: none;
+
+        border-top: 1px solid #e6c7c1;
+
+        padding-left: 0;
+
+        padding-top: 20px;
+    }
+
+}
