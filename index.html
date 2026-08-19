@@ -35,8 +35,14 @@
             href="https://wa.me/573166867792"
             target="_blank"
         >
-            ☎ WhatsApp
+            ☎ WhatsApp     
+            
         </a>
+
+        <button id="boton-carrito" class="boton-carrito">
+            🛒 Carrito
+            <span id="contador-carrito">0</span>
+        </button>
 
     </header>
 
@@ -127,7 +133,7 @@
 
         <div class="titulo-seccion">
 
-            <p>NUESTROS PRODUCTOS</p>
+            <p>LINEA DE PRODUCTOS</p>
 
             <h2>
                 Encuentra tu favorito
@@ -141,6 +147,11 @@
         <div class="contenedor-productos">
 
 
+            <!-- =========================
+                 HELADOS
+            ========================== -->
+
+
             <!-- PRODUCTO 1 -->
 
             <article class="producto">
@@ -148,15 +159,15 @@
                 <div class="imagen-producto">
 
                     <img
-                        src="imagenes/helado_miel.jpg"
-                        alt="Helado Capilar Miel"
+                        src="imagenes/helado coco y miel.jpg"
+                        alt="helado coco y miel."
                     >
 
                 </div>
 
                 <div class="contenido-producto">
 
-                    <h3>Helado Capilar Miel</h3>
+                    <h3>Helado coco y miel.</h3>
 
                     <p>
                         Hidratación profunda y suavidad
@@ -167,13 +178,13 @@
                         $38.000
                     </strong>
 
-                    <a
+                    <button
                         class="comprar"
-                        href="https://wa.me/573166867792?text=Hola%20DASH%20ESTUDIO,%20quiero%20comprar%20el%20Helado%20Capilar%20Miel%20de%20$38.000."
-                        target="_blank"
+                        data-nombre="helado coco y miel."
+                        data-precio="38000"
                     >
-                        💬 Comprar por WhatsApp
-                    </a>
+                        🛒 Agregar al carrito
+                    </button>
 
                 </div>
 
@@ -206,17 +217,138 @@
                         $38.000
                     </strong>
 
-                    <a
+                    <button
                         class="comprar"
-                        href="https://wa.me/573166867792?text=Hola%20DASH%20ESTUDIO,%20quiero%20comprar%20el%20Helado%20Fresa%20de%20$38.000."
-                        target="_blank"
+                        data-nombre="Helado Fresa"
+                        data-precio="38000"
                     >
-                        💬 Comprar por WhatsApp
-                    </a>
+                        🛒 Agregar al carrito
+                    </button>
 
                 </div>
 
             </article>
+
+
+            <!-- PRODUCTO 9 -->
+
+            <article class="producto">
+
+                <div class="imagen-producto">
+
+                    <img
+                        src="imagenes/helado_aguacate_romero.jpg"
+                        alt="Helado Capilar Aguacate y Romero"
+                    >
+
+                </div>
+
+                <div class="contenido-producto">
+
+                    <h3>Helado Capilar Aguacate y Romero</h3>
+
+                    <p>
+                        Tratamiento capilar con aguacate, romero, aloe vera,
+                        colágeno, elastina y queratina.
+                    </p>
+
+                    <strong class="precio">
+                        $38.000
+                    </strong>
+
+                    <button
+                        class="comprar"
+                        data-nombre="Helado Capilar Aguacate y Romero"
+                        data-precio="38000"
+                    >
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 11 -->
+
+            <article class="producto">
+
+                <div class="imagen-producto">
+
+                    <img
+                        src="imagenes/helado_ice_blueberry.jpg"
+                        alt="Helado Capilar Ice Blueberry"
+                    >
+
+                </div>
+
+                <div class="contenido-producto">
+
+                    <h3>Helado Capilar Ice Blueberry</h3>
+
+                    <p>
+                        Tratamiento capilar con aroma de Ice Blueberry,
+                        hidratación profunda y suavidad.
+                    </p>
+
+                    <strong class="precio">
+                        $38.000
+                    </strong>
+
+                    <button
+                        class="comprar"
+                        data-nombre="Helado Capilar Ice Blueberry"
+                        data-precio="38000"
+                    >
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 15 -->
+
+            <article class="producto">
+
+                <div class="imagen-producto">
+
+                    <img
+                        src="imagenes/jalea_con feromonas.jpg"
+                        alt="Jalea de Romero"
+                    >
+
+                </div>
+
+                <div class="contenido-producto">
+
+                    <h3>helado con  feromonas</h3>
+
+                    <p>
+                        tratamiento capilar con feromonas que ayudan a recuperar el cabello dañado notas el cambio desde la primera aplicación.
+                    </p>
+
+                    <strong class="precio">
+                        $38.000
+                    </strong>
+
+                    <button
+                        class="comprar"
+                        data-nombre="Jalea de Romero"
+                        data-precio="38000"
+                    >
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 JALEAS
+            ========================== -->
 
 
             <!-- PRODUCTO 3 -->
@@ -226,32 +358,32 @@
                 <div class="imagen-producto">
 
                     <img
-                        src="imagenes/jalea_capilar.jpg"
-                        alt="Jalea Capilar"
+                        src="imagenes/jalea de aguacate.jpg"
+                        alt="jalea de aguacate."
                     >
 
                 </div>
 
                 <div class="contenido-producto">
 
-                    <h3>Jalea Capilar</h3>
+                    <h3>Jalea de aguacate.</h3>
 
                     <p>
                         Hidrata, nutre y fortalece
-                        tu cabello desde la raíz.
+                        tu cabello desde la raíz luce tu cabello hermoso desde la primera aplicacion.
                     </p>
 
                     <strong class="precio">
                         $38.000
                     </strong>
 
-                    <a
+                    <button
                         class="comprar"
-                        href="https://wa.me/573166867792?text=Hola%20DASH%20ESTUDIO,%20quiero%20comprar%20la%20Jalea%20Capilar%20de%20$38.000."
-                        target="_blank"
+                        data-nombre="Jalea de aguacate."
+                        data-precio="38000"
                     >
-                        💬 Comprar por WhatsApp
-                    </a>
+                        🛒 Agregar al carrito
+                    </button>
 
                 </div>
 
@@ -284,17 +416,105 @@
                         $38.000
                     </strong>
 
-                    <a
+                    <button
                         class="comprar"
-                        href="https://wa.me/573166867792?text=Hola%20DASH%20ESTUDIO,%20quiero%20comprar%20la%20Jalea%20Miel%20de%20$38.000."
-                        target="_blank"
+                        data-nombre="Jalea Miel"
+                        data-precio="38000"
                     >
-                        💬 Comprar por WhatsApp
-                    </a>
+                        🛒 Agregar al carrito
+                    </button>
 
                 </div>
 
             </article>
+
+
+            <!-- =========================
+                 TÓNICOS CAPILARES
+            ========================== -->
+
+
+            <!-- PRODUCTO 6 -->
+
+            <article class="producto">
+
+                <div class="imagen-producto">
+
+                    <img
+                        src="imagenes/tonico_capilar.jpg"
+                        alt="Tónico Capilar"
+                    >
+
+                </div>
+
+                <div class="contenido-producto">
+
+                    <h3>Tónico de crecimientoCapilar</h3>
+
+                    <p>
+                        Fortalece el cabello y ayuda
+                        a estimular su crecimiento.
+                    </p>
+
+                    <strong class="precio">
+                        $33.000
+                    </strong>
+
+                    <button
+                        class="comprar"
+                        data-nombre="Tónico Capilar"
+                        data-precio="33000"
+                    >
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 7 -->
+
+            <article class="producto">
+
+                <div class="imagen-producto">
+
+                    <img
+                        src="imagenes/tonico_miel.jpg"
+                        alt="Tónico Miel"
+                    >
+
+                </div>
+
+                <div class="contenido-producto">
+
+                    <h3>Tónico Miel</h3>
+
+                    <p>
+                        Tónico con miel para hidratar,
+                        nutrir y revitalizar las puntas de tu cabello.
+                    </p>
+
+                    <strong class="precio">
+                        $36.000
+                    </strong>
+
+                    <button
+                        class="comprar"
+                        data-nombre="Tónico Miel"
+                        data-precio="33000"
+                    >
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 PERFUMES
+            ========================== -->
 
 
             <!-- PRODUCTO 5 -->
@@ -323,91 +543,13 @@
                         $27.000
                     </strong>
 
-                    <a
+                    <button
                         class="comprar"
-                        href="https://wa.me/573166867792?text=Hola%20DASH%20ESTUDIO,%20quiero%20comprar%20el%20Perfume%20Termoprotector%20de%20$27.000."
-                        target="_blank"
+                        data-nombre="Perfume Termoprotector"
+                        data-precio="27000"
                     >
-                        💬 Comprar por WhatsApp
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- PRODUCTO 6 -->
-
-            <article class="producto">
-
-                <div class="imagen-producto">
-
-                    <img
-                        src="imagenes/tonico_capilar.jpg"
-                        alt="Tónico Capilar"
-                    >
-
-                </div>
-
-                <div class="contenido-producto">
-
-                    <h3>Tónico Capilar</h3>
-
-                    <p>
-                        Fortalece el cabello y ayuda
-                        a estimular su crecimiento.
-                    </p>
-
-                    <strong class="precio">
-                        $33.000
-                    </strong>
-
-                    <a
-                        class="comprar"
-                        href="https://wa.me/573166867792?text=Hola%20DASH%20ESTUDIO,%20quiero%20comprar%20el%20Tonico%20Capilar%20de%20$33.000."
-                        target="_blank"
-                    >
-                        💬 Comprar por WhatsApp
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- PRODUCTO 7 -->
-
-            <article class="producto">
-
-                <div class="imagen-producto">
-
-                    <img
-                        src="imagenes/tonico_miel.jpg"
-                        alt="Tónico Miel"
-                    >
-
-                </div>
-
-                <div class="contenido-producto">
-
-                    <h3>Tónico Miel</h3>
-
-                    <p>
-                        Tónico con miel para hidratar,
-                        nutrir y revitalizar.
-                    </p>
-
-                    <strong class="precio">
-                        $33.000
-                    </strong>
-
-                    <a
-                        class="comprar"
-                        href="https://wa.me/573166867792?text=Hola%20DASH%20ESTUDIO,%20quiero%20comprar%20el%20Tonico%20Miel%20de%20$33.000."
-                        target="_blank"
-                    >
-                        💬 Comprar por WhatsApp
-                    </a>
+                        🛒 Agregar al carrito
+                    </button>
 
                 </div>
 
@@ -416,24 +558,150 @@
 
             <!-- PRODUCTO 8 -->
 
-            <article class="producto producto-especial">
+            <article class="producto">
 
                 <div class="imagen-producto">
 
                     <img
-                       src="imagenes/productos_disponibles.jpg"
-                        alt="Productos Disponibles"
+                        src="imagenes/perfume capilar love cherri.jpg"
+                        alt="perfume capilar love cherri.jpg"
                     >
 
                 </div>
 
                 <div class="contenido-producto">
 
-                    <h3>Productos Disponibles</h3>
+                    <h3>perfume capilar love cherri</h3>
 
                     <p>
-                        Descubre toda nuestra línea
-                        de productos para el cuidado capilar.
+                        Perfume capilar termoprotector con aroma love cherri
+                    </p>
+
+                    <strong class="precio">
+                        $27.000
+                    </strong>
+
+                    <button
+                        class="comprar"
+                        data-nombre="Perfume Capilar Ice Blueberry"
+                        data-precio="38000"
+                    >
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 12 -->
+
+            <article class="producto">
+
+                <div class="imagen-producto">
+
+                    <img
+                        src="imagenes/perfume_capilar_ice_blueberry.jpg"
+                        alt="Perfume Capilar Ice Blueberry"
+                    >
+
+                </div>
+
+                <div class="contenido-producto">
+
+                    <h3>Perfume Capilar Ice Blueberry</h3>
+
+                    <p>
+                        Perfume capilar termoprotector con aroma fresco
+                        de Ice Blueberry.
+                    </p>
+
+                    <strong class="precio">
+                        $27.000
+                    </strong>
+
+                    <button
+                        class="comprar"
+                        data-nombre="Perfume Capilar Ice Blueberry"
+                        data-precio="38000"
+                    >
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 SMOOTHIE CORPORAL
+            ========================== -->
+
+
+            <!-- PRODUCTO 13 -->
+
+            <article class="producto">
+
+                <div class="imagen-producto">
+
+                    <img
+                        src="imagenes/smoothie_corporal.jpg"
+                        alt="Smoothie Corporal"
+                    >
+
+                </div>
+
+                <div class="contenido-producto">
+
+                    <h3>Smoothie Corporal</h3>
+
+                    <p>
+                        Splash concentrado en gel con destellos de brillo
+                        y diferentes aromas disponibles para ti.
+                    </p>
+
+                    <strong class="precio">
+                        $25.000
+                    </strong>
+
+                    <button
+                        class="comprar"
+                        data-nombre="Smoothie Corporal"
+                        data-precio="38000"
+                    >
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 TU CABELLO EN LAS MEJORES MANOS
+            ========================== -->
+
+
+            <!-- PRODUCTO 15 -->
+
+            <article class="producto producto-especial">
+
+                <div class="imagen-producto">
+
+                    <img
+                        src="imagenes/nuestros servicios.jpg"
+                        alt="Nuestros Servicios"
+                    >
+
+                </div>
+
+                <div class="contenido-producto">
+
+                    <h3>tu cabello en las mejores manos </h3>
+
+                    <p>
+                        Descubre como recuperar tu cabello con nuestros servicios y productos de cuidado capilar. Contamos con una amplia gama.
+                        
                     </p>
 
                     <a
@@ -448,7 +716,53 @@
 
             </article>
 
+
         </div>
+
+
+        <!-- ==============================
+             CARRITO DE COMPRAS
+        ============================== -->
+
+        <div id="carrito" class="carrito">
+
+            <div class="carrito-contenido">
+
+                <button id="cerrar-carrito" class="cerrar-carrito">
+                    ✕
+                </button>
+
+                <h2>🛒 Mi carrito</h2>
+
+                <div id="lista-carrito">
+
+                    <p class="carrito-vacio">
+                        Tu carrito está vacío.
+                    </p>
+
+                </div>
+
+                <div class="total-carrito">
+
+                    <strong>Total:</strong>
+
+                    <span id="total-carrito">
+                        $0
+                    </span>
+
+                </div>
+
+                <button
+                    id="comprar-whatsapp"
+                    class="comprar-carrito"
+                >
+                    💬 Comprar por WhatsApp
+                </button>
+
+            </div>
+
+        </div>
+
 
     </section>
 
